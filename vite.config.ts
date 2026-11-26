@@ -11,7 +11,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // Supplied by the GitHub Pages workflow. It is `/repository-name` for a
 // project site and empty for a `username.github.io` repository or custom domain.
-const githubPagesBase = process.env.GITHUB_PAGES_BASE_PATH || "/";
+const githubPagesBase = process.env["GITHUB_PAGES_BASE_PATH"] || "/";
 
 export default defineConfig({
   // GitHub Pages serves static files only; it cannot run the Nitro/SSR worker.
